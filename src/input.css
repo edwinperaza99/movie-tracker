@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-bar-element {
+    @apply font-medium tracking-wide text-white transition-colors duration-200;
+  }
+}
