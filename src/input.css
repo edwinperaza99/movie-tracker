@@ -9,4 +9,7 @@
   .bar-element {
     @apply font-medium tracking-wide text-gray-100;
   }
+  .btn-primary {
+    @apply px-4 py-2 text-white font-medium rounded-lg shadow-md;
+  }
 }

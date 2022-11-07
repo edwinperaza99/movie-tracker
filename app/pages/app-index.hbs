@@ -1,4 +1,22 @@
-<h1 class="text-3xl font-bold underline text-blue-700">Welcome to the app!</h1>
-<div>[[ Dynamic Remake code goes here]]</div>
-<br><br>
-<a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a>
+<h1 class="text-4xl font-bold text-blue-700 text-center">Your Categories</h1>
+<hr class="max-w-2xl mx-auto mt-2 mb-6 bg-gray-800">
+<div class="flex flex-col gap-14 items-center" object>
+  <ul class="flex flex-col gap-4 items-center" array key="categories" sortable>
+    {{#for category in categories}}
+      <li object key="details">
+        <h2 class="text-3xl font-medium mb-2 underline text-gray-800" object key:name="@innertext" edit:name>
+          {{default category.details.name "Add category name"}}
+        </h2>
+        <ul class="mb-3" array key="movies" sortable>
+          {{#for movie in category.details.movies}}
+            <li class="text-lg" object key:title="@innertext" edit:title>
+              {{default movie.title "Add new movie"}}
+            </li>
+          {{/for}}
+        </ul>
+        <button class="btn-primary bg-blue-500" new:movie>Add movie</button>
+      </li>
+    {{/for}}
+  </ul>
+  <button class="btn-primary bg-orange-500" new:category>Add category</button>
+</div>
