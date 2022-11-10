@@ -28,19 +28,58 @@
                             <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">Movies</span>
                         </a>
                         <ul class="flex items-center space-x-8 lg:flex bar-element">
-                            <li><a href="/{{currentUser.details.username}}" aria-label="Home" title="Home">Dashboard</a>
-                            </li>
                             <li><a href="/aboutus" aria-label="About us" title="About us">About
                                     us</a></li>
                         </ul>
                     </div>
                     <ul class="flex items-center space-x-8 lg:flex bar-element">
                         {{#if currentUser}}
-                        <li><a href="/user/logout" aria-label="Logout">Logout</a></li>
+                        <li><a class="group relative inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
+                                href="/{{currentUser.details.username}}">
+                                <span
+                                    class="absolute inset-y-0 left-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
+
+                                <span
+                                    class="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">
+                                    Dashboard
+                                </span>
+                            </a></li>
+
+                        <!-- Right -->
+
+                        <li><a class="group relative inline-block overflow-hidden border border-indigo-600 px-11 py-3 focus:outline-none focus:ring"
+                                href="/user/logout">
+                                <span
+                                    class="absolute inset-y-0 right-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
+
+                                <span
+                                    class="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">Logout
+                                </span>
+                            </a></li>
                         {{else}}
-                        <li><a class="nav__button" href="/user/signup">Sign up</a></li>
-                        &nbsp;
-                        <li><a class="nav__button" href="/user/login">Log in</a></li>
+                        <li><a class="group relative inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
+                                href="/user/signup">
+                                <span
+                                    class="absolute inset-y-0 left-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
+
+                                <span
+                                    class="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">
+                                    Sign up
+                                </span>
+                            </a></li>
+
+                        <!-- Right -->
+
+                        <li><a class="group relative inline-block overflow-hidden border border-indigo-600 px-9 py-3 focus:outline-none focus:ring"
+                                href="/user/login">
+                                <span
+                                    class="absolute inset-y-0 right-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
+
+                                <span
+                                    class="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">Log
+                                    in
+                                </span>
+                            </a></li>
                         {{/if}}
                     </ul>
                 </div>
