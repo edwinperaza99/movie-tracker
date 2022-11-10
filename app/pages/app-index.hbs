@@ -1,5 +1,6 @@
 <div class="text-center">
-    <h1 class="text-4xl font-bold text-blue-700 text-center">Your Categories</h1>
+    <h1 class="text-4xl font-bold text-blue-700 text-center"object key:page-title="@innerText" edit:page-title:without-remove>Welcome {{currentUser.details.username}}!</h1>
+    <h2 class="text-4xl font-bold text-blue-700 text-center">Your Categories</h2>
     <hr class="max-w-2xl mx-auto mt-2 mb-6 bg-gray-800">
     {{!-- <div class="flex flex-col gap-14 items-center" object>
         <ul class="flex flex-col gap-4 items-center" array key="categories" sortable>
@@ -35,34 +36,26 @@
 
 
     <div object>
-        <button class="btn-primary bg-orange-500" new:project>New category</button>
+        <button class="btn-primary bg-orange-500" new:category>New category</button>
         {{!-- make section here to give style to the overall thing --}}
-        <div array key="projects" sortable>
-            {{#for project in projects}}
+        <div array key="categories" sortable>
+            {{#for category in categories}}
             {{!-- make this a section or an article for individual cards for categories --}}
-            <div object key:project-name="@search">
-                <h1 target:project-name="@innerText" edit:project-name>Category name</h1>
-                <div object key:budget="@innerText" edit:budget>Comments about your category here</div>
-                <div array key="projectItems" sortable>
-                    {{#for projectItem in project.projectItems}}
-                    {{!-- <div array key="movies" sortable> --}}
-                        <div object key:item-length="@search" key:item-type="@search" edit:item-length edit:item-type>
-                            <div target:item-length="@innerText">Movie title</div>
-                            <div target:item-type="@innerText">Comment about the movie</div>
+            <div object key:category-name="@search">
+                <h3 target:category-name="@innerText" edit:category-name>Category name</h3>
+                <p object key:description="@innerText" edit:description>Category description here</p>
+                <div array key="movies" sortable>
+                    {{#for movie in movies}}
+                    
+                        <div object key:movie-title="@search">
+                            <h4 target:movie-title="@innerText" edit:movie-title>Movie title</h4>
+                            <div object key:movie-description="@innerText" edit:movie-description>Did you like the movie?</div>
+                            
                         </div>
-                        {{!--
-                    </div> --}}
-                    <div class="rating">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    </div>
 
                     {{/for}}
                 </div>
-                <button class="btn-primary bg-green-600" new:project-item>Add movie</button>
+                <button class="btn-primary bg-green-600" new:movie>Add movie</button>
             </div>
             {{/for}}
         </div>
