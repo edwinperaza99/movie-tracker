@@ -1,63 +1,31 @@
 <div class="container mx-auto">
-    <h1 class="text-4xl font-bold text-blue-700 text-center"object key:page-title="@innerText" edit:page-title:without-remove>Welcome {{currentUser.details.username}}!</h1>
-    <h2 class="text-4xl font-bold text-blue-700 text-center">Your Categories</h2>
-    <hr class="max-w-2xl mx-auto mt-2 mb-6 bg-gray-800">
-    {{!-- <div class="flex flex-col gap-14 items-center" object>
-        <ul class="flex flex-col gap-4 items-center" array key="categories" sortable>
-            {{#for category in categories}}
-            <li object key="details">
-                <h2 class="text-3xl font-medium mb-2 underline text-gray-800" object key:name="@innertext" edit:name>
-                    {{default category.details.name "Add category name"}}
-                </h2>
-                <ul class="mb-3" array key="movies" sortable>
-                    {{#for movie in category.details.movies}}
-                    <li class="text-lg" object key:title="@innertext" edit:title>
-                        {{default movie.title "Add new movie"}}
-                    </li>
-                    {{/for}}
-                </ul>
-                <button class="btn-primary bg-blue-500" new:movie>Add movie</button>
-            </li>
-            {{/for}}
-        </ul>
-        <button class="btn-primary bg-orange-500" new:category>Add category</button>
-    </div>
-
-    <div object key:page-title="@innerText"></div>
-
-    <hr>
-
-    {{#for item in items}}
-    <div class="btn-primary bg-red-600" object key:name="@innerText">{{item.name}}</div>
-    {{/for}}
-    <button new:item>Create new item</button> --}}
-
-    {{!-- try my own implementation --}}
-
-
+    <h1 class="py-4 text-4xl font-bold text-gray-700 text-center"object key:page-title="@innerText" edit:page-title>Welcome back, {{currentUser.details.username}}!</h1>
+    <hr class="max-w-2xl mx-auto mb-4 bg-gray-800">
+    
     <div object>
-        <h2>Add as many categories as you want</h2>
-        <button class="btn-primary bg-orange-500" new:category>New category</button>
+        <div class="flex justify-center">
+        <button class="flex items-center justify-center rounded border border-yellow-700 bg-yellow-200 font-bold px-12 py-3 text-yellow-700 hover:bg-yellow-700 hover:text-yellow-200 hover:border-yellow-200  focus:ring " new:category>New category</button>
+        </div>
         {{!-- make section here to give style to the overall thing --}}
         <article class="flex flex-col">
         <div array key="categories" sortable>
             {{#for category in categories}}
             {{!-- make this a section or an article for individual cards for categories --}}
-            <div class="my-4 border-4 border-sky-500 rounded p-4" object key:category-name="@search">
-                <h3 class="text-2xl font-medium text-gray-900 title-font mb-2" target:category-name="@innerText" edit:category-name>Category name</h3>
-                <p class="text-base text-gray-700 md:text-lg" object key:description="@innerText" edit:description>Category description here</p>
+            <div class="my-4 border-4 border-blue-300 rounded p-4" object key:category-name="@search">
+                <h3 class="text-2xl font-medium text-gray-900 title-font mb-2" target:category-name="@innerText" edit:category-name>Category name:</h3>
+                <p class="text-sm text-gray-500 py-1" object key:description="@innerText" edit:description>Category description here!</p>
                 <div array key="movies" sortable>
                     {{#for movie in movies}}
                     
                         <div object key:movie-title="@search">
-                            <h4 target:movie-title="@innerText" edit:movie-title>Movie title</h4>
+                            <h4 class="font-medium" target:movie-title="@innerText" edit:movie-title>Movie title</h4>
                             <div object key:movie-description="@innerText" edit:movie-description>Did you like the movie?</div>
                             
                         </div>
 
                     {{/for}}
                 </div>
-                <button class="btn-primary bg-green-600 mt-2" new:movie>Add movie</button>
+                <button class="rounded border font-medium border-blue-900 bg-blue-900 px-4 py-2 text-white hover:bg-transparent hover:text-blue-900 hover:border-blue-900" new:movie>Add movie</button>
             </div>
             {{/for}}
         </div>

@@ -17,66 +17,66 @@
                 <div class="relative flex items-center justify-between">
                     <div class="flex items-center">
                         <a href="/" aria-label="Company" title="Company" class="inline-flex items-center mr-8">
-                            <svg class="w-8 text-teal-accent-400  hover:stroke-indigo-600" viewBox="0 0 24 24" stroke-linejoin="round"
+                            <svg class="w-8 text-teal-accent-400 hover:stroke-blue-300" viewBox="0 0 24 24" stroke-linejoin="round"
                                 stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="white"
                                 fill="none">
-                                <rect x="3" y="1" width="7" height="12"></rect>
-                                <rect x="3" y="17" width="7" height="6"></rect>
-                                <rect x="14" y="1" width="7" height="6"></rect>
-                                <rect x="14" y="11" width="7" height="12"></rect>
+                                <rect class="hover:stroke-blue-300" x="3" y="1" width="7" height="12"></rect>
+                                <rect class="hover:stroke-blue-300" x="3" y="17" width="7" height="6"></rect>
+                                <rect class="hover:stroke-blue-300" x="14" y="1" width="7" height="6"></rect>
+                                <rect class="hover:stroke-blue-300" x="14" y="11" width="7" height="12"></rect>
                             </svg>
-                            <span class="ml-2 text-xl font-bold tracking-wide text-gray-100  hover:text-indigo-600">FavFlicks</span>
+                            <span class="ml-2 text-xl font-bold tracking-wide text-gray-100  hover:text-blue-300">FavFlicks</span>
                         </a>
                         <ul class="flex items-center space-x-8 lg:flex bar-element">
-                            <li><a class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-indigo-600" href="/about_us" aria-label="About us" title="About us">About
+                            <li><a class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-blue-300" href="/aboutus" aria-label="About us" title="About us">About
                                     us</a></li>
                         </ul>
                     </div>
                     <ul class="flex items-center space-x-8 lg:flex bar-element">
                         {{#if currentUser}}
-                        <li><a class="group relative inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
+                        <li><a class="group relative inline-block overflow-hidden border border-blue-300 px-8 py-3 focus:outline-none focus:ring"
                                 href="/{{currentUser.details.username}}">
                                 <span
-                                    class="absolute inset-y-0 left-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
+                                    class="absolute inset-y-0 left-0 w-[2px] bg-blue-300 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
 
                                 <span
-                                    class="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">
+                                    class="relative text-sm font-medium text-blue-300 transition-colors group-hover:text-white">
                                     Dashboard
                                 </span>
                             </a></li>
 
                         <!-- Right -->
 
-                        <li><a class="group relative inline-block overflow-hidden border border-indigo-600 px-11 py-3 focus:outline-none focus:ring"
+                        <li><a class="group relative inline-block overflow-hidden border border-blue-300 px-11 py-3 focus:outline-none focus:ring"
                                 href="/user/logout">
                                 <span
-                                    class="absolute inset-y-0 right-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
+                                    class="absolute inset-y-0 right-0 w-[2px] bg-blue-300 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
 
                                 <span
-                                    class="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">Logout
+                                    class="relative text-sm font-medium text-blue-300 transition-colors group-hover:text-white">Logout
                                 </span>
                             </a></li>
                         {{else}}
-                        <li><a class="group relative inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
+                        <li><a class="group relative inline-block overflow-hidden border border-blue-300 px-8 py-3 focus:outline-none focus:ring"
                                 href="/user/signup">
                                 <span
-                                    class="absolute inset-y-0 left-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
+                                    class="absolute inset-y-0 left-0 w-[2px] bg-blue-300 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
 
                                 <span
-                                    class="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">
+                                    class="relative text-sm font-medium text-blue-300 transition-colors group-hover:text-white">
                                     Sign up
                                 </span>
                             </a></li>
 
                         <!-- Right -->
 
-                        <li><a class="group relative inline-block overflow-hidden border border-indigo-600 px-9 py-3 focus:outline-none focus:ring"
+                        <li><a class="group relative inline-block overflow-hidden border border-blue-300 px-9 py-3 focus:outline-none focus:ring"
                                 href="/user/login">
                                 <span
-                                    class="absolute inset-y-0 right-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
+                                    class="absolute inset-y-0 right-0 w-[2px] bg-blue-300 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
 
                                 <span
-                                    class="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">Log
+                                    class="relative text-sm font-medium text-blue-300 transition-colors group-hover:text-white">Log
                                     in
                                 </span>
                             </a></li>
