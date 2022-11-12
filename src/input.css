@@ -15,4 +15,13 @@
   .before-style {
     @apply before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-indigo-600 before:transition hover:before:scale-100;
   }
+  .about-heading {
+    @apply text-xl font-medium mb-6 underline;
+  }
+  .about-link {
+    @apply text-purple-600 font-medium underline;
+  }
+  .about-img {
+    @apply w-24 h-24 bg-red-500 mb-2;
+  }
 }
