@@ -1,35 +1,18 @@
-# Create an app! 🪂
+# CPSC 349 - Project 2 Submission! 🪂
 
-Create your first Remake app:
-
-```
-npm install -g remake
-remake create your-remake-app
-```
-
-Now you have a Trello clone app! 🤩
-
-# Get your app running! 🛵
-
-Use the following commands to start the development server:
+Group 12:
 
 ```
-cd your-remake-app
-npm run dev
+- Edwin Peraza
+- Ethan Safai
+- Ethan Ton
+- Jin Huang
 ```
 
-# Learn how Remake works! 👩‍💻👨‍💻
+# This file should include three folders for the requirement of the submission: 🛵
 
-Look in the "app" directory to see all the code for the Trello clone app:
-
-Inside the `/app/pages` directory you'll find the `app-index.hbs` file.
-
-This file includes the entire Trello clone app! 👍
-
-# Start from scratch 👨‍🎨👩‍🎨
-
-If you want to start from scratch, follow the instructions in /app/README.md
-
-# Full Remake Docs
-
-**IMPORTANT:** A NEW VERSION of this framework was just released. **Don't use the current docs**. For now, you can use this [thorough recipes page](https://recipes.remaketheweb.com/) to learn the new syntax.
+```
+- cpsc349-project2 containing the remake prototype
+- mockups containing our html with tailwind classes
+- wireframes containing all the wireframes including some that we did not use
+```
