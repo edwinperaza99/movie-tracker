@@ -72,19 +72,37 @@
       </div>
     </header>
     <main class="flex-grow">
-      <h1 class="font-medium leading-tight text-5xl text-center mt-10 mb-2 text-grey-100 pt-16"
-        >Welcome to FavFlicks!</h1
-      >
+      <div class="container mx-auto">
+        <h1 class="py-4 text-4xl font-bold text-gray-700 text-center">Welcome back, username!</h1>
+        <hr class="max-w-2xl mx-auto mb-4 bg-gray-800" />
 
-      <section class="mb-20 text-gray-700">
-        <div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
-          <h3 class="text-3xl font-bold mb-6 text-gray-800">About our Website</h3>
-          <p class="mb-6 pb-2 md:mb-12 md:pb-0">
-            Here at FavFlicks you can create your archive of movies watched or build lists of your
-            favorite cult classics plus other features you can discover once you sign up.
-          </p>
+        <div>
+          <div class="flex justify-center">
+            <button
+              class="flex items-center justify-center rounded border border-yellow-700 bg-yellow-200 font-bold px-12 py-3 text-yellow-700 hover:bg-yellow-700 hover:text-yellow-200 hover:border-yellow-200 focus:ring"
+              >New category</button
+            >
+          </div>
+          <article class="flex flex-col">
+            <div>
+              <div class="my-4 border-4 border-blue-300 rounded p-4 hover:border-blue-700">
+                <h3 class="text-2xl font-medium text-gray-900 title-font mb-2">Category name:</h3>
+                <p class="text-sm text-gray-500 pb-1">Category description here!</p>
+                <div>
+                  <div>
+                    <h4 class="font-medium">Movie title</h4>
+                    <p class="text-sm text-gray-500 pb-1">Did you like the movie?</p>
+                  </div>
+                </div>
+                <button
+                  class="rounded border font-medium border-blue-900 bg-blue-900 px-4 py-2 text-white hover:bg-transparent hover:text-blue-900 hover:border-blue-900"
+                  >Add movie</button
+                >
+              </div>
+            </div>
+          </article>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="bg-gray-200 text-center lg:text-left">
       <p class="text-gray-700 text-center p-4"> © 2022 Copyright: Group 12 </p>

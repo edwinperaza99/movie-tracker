@@ -72,19 +72,33 @@
       </div>
     </header>
     <main class="flex-grow">
-      <h1 class="font-medium leading-tight text-5xl text-center mt-10 mb-2 text-grey-100 pt-16"
-        >Welcome to FavFlicks!</h1
-      >
-
-      <section class="mb-20 text-gray-700">
-        <div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
-          <h3 class="text-3xl font-bold mb-6 text-gray-800">About our Website</h3>
-          <p class="mb-6 pb-2 md:mb-12 md:pb-0">
-            Here at FavFlicks you can create your archive of movies watched or build lists of your
-            favorite cult classics plus other features you can discover once you sign up.
-          </p>
+      <div class="flex items-center justify-center h-full my-40">
+        <div class="px-8 py-6 mt-4 text-left bg-grey-100 shadow-lg">
+          <h3 class="text-2xl font-bold text-center">Forgot your password?</h3>
+          <p class="mt-4">We will send a link to your associated email account</p>
+          <form action="/user/forgot" method="post">
+            <div class="mt-4">
+              <div class="">
+                <label class="block font-bold">Username</label>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Your Username"
+                  class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  required
+                />
+              </div>
+              <div class="flex items-baseline justify-center">
+                <button
+                  type="submit"
+                  class="px-6 py-2 mt-8 w-full text-white bg-blue-600 rounded-lg hover:bg-blue-900"
+                  >Reset my password</button
+                >
+              </div>
+            </div>
+          </form>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="bg-gray-200 text-center lg:text-left">
       <p class="text-gray-700 text-center p-4"> © 2022 Copyright: Group 12 </p>
