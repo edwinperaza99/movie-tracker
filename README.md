@@ -1,5 +1,9 @@
 # CPSC 349 - Project 2 Submission! 🪂
 
+## Requirements
+
+- Node 18
+
 Group 12:
 
 ```
